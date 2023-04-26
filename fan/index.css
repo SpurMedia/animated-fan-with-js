@@ -1,0 +1,68 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: black;
+   height: 100vh;
+   color: aliceblue;
+   font-size: larger;
+   font-weight: 500;
+   font-family: sans-serif;
+}
+.speed_holder{
+   position: fixed;
+   top: 3%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.men{
+   width: 40px;
+   height: 40px;
+   margin: 5px;
+   background-color: white;
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: black;
+}
+.fan{
+   width: 200px;
+   height: 200px;
+   /* background-color: white; */
+   border-radius: 50%;
+   border-top:10px solid red ;
+   border-bottom: 10px solid blue;
+   animation-name: okay;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-duration: 1s;
+}
+.stand{
+   margin-top: -100px;
+   width: 50px;
+   height: 280px;
+   background-color: gold;
+   z-index: -2;
+}
+
+.slow{
+   animation-duration: 1s;
+}
+.medium{
+   animation-duration: 0.5s;
+}
+.fast{
+   animation-duration: 0.2s;
+}
+.ball{
+   background-color: yellow !important;
+}
+
+@keyframes okay {
+     100%{
+      transform: rotate(360deg);
+     }
+}

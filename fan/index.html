@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Fan</title>
+   <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+   <div class="speed_holder">
+      Pick your Desired speed
+
+      <div style="display: flex;">
+         <div onclick="setActive(slow,'slow')" class="men ball" id="slow"> 1 </div>
+         <div onclick="setActive(medium,'medium')" class="men" id="medium"> 2 </div>
+         <div onclick="setActive(fast,'fast')" class="men" id="fast"> 3 </div>
+      </div>
+   
+   </div>
+
+
+   <div class="fan" id="fan"></div>
+   <div class="stand"></div>
+
+   <!-- <div class="mov" id="ma"></div> -->
+
+   <script src="index.js"></script>
+</body>
+</html>
